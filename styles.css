@@ -1,34 +1,39 @@
+:root {
+    --responsive-font: clamp(1.5rem, 4vw, 2.5rem);
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 247, 240);
+    color: rgb(0, 0, 0);
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
 h1 {
     text-align: center;
-    color: white;
+    color: black;
     padding: 30px;
 }
 
 canvas {
-    background: #eee;
+    background: #fff;
     display: block;
     margin: 30px auto;
     border: 1px solid black;
+
 }
 
 .score-display {
     text-align: center;
-    font-size: 3rem;
+    font-size: var(--responsive-font);
 }
 
 .exclamation {
@@ -45,7 +50,7 @@ canvas {
     display: none;
     text-align: center;
     color: red;
-    font-size: 3rem;
+    font-size: var(--responsive-font);
     padding: 1rem;
 }
 
@@ -56,7 +61,7 @@ canvas {
 }
 
 button {
-    font-size: 2rem;
+    font-size: var(--responsive-font);
     padding: 1rem;
     border-radius: 1rem;
 }
